@@ -15,6 +15,8 @@
 #include <EditorModeManager.h>
 #include <EditorModeTools.h>
 
+#include "Engine/HitResult.h"
+
 
 #pragma region Setup
 
@@ -353,7 +355,7 @@ void UElgEditorContext_LevelEditor::GetMousePosition(bool& Success, FVector2D& P
 
 
 void UElgEditorContext_LevelEditor::GetMousePositionWorld(const bool ShowTrace, bool& Success, FVector& WorldPos)
-{
+{ 
 	FHitResult Hit;
 	LineTrace(false, ShowTrace, TArray<AActor*>(), Success, Hit);
 

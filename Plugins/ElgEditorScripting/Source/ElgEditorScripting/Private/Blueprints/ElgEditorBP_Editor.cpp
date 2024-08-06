@@ -6,6 +6,7 @@
 #include "ElgEditorBP_Enum.h"
 #include "HAL/FileManager.h"
 #include "Misc/FileHelper.h"
+#include "ElgEditorScripting.h"
 #include "ElgEditorContext_SlowTask.h"
 
 
